@@ -41,14 +41,16 @@
     // Step 4: Initialize the component once it's loaded
     function initializeComponent() {
       try {
-        if (window.MyComponent) {
-          console.log("MyComponent loaded successfully.");
-          const MyComponent = window.MyComponent; // Access the default export
+        console.log("Checking MyComponent:", window.MyComponent);
 
-          // Initialize React component
-          const root = ReactDOM.createRoot(document.getElementById(rootDivId));
-          root.render(React.createElement(MyComponent)); // Render MyComponent
-          console.log("React component rendered.");
+        if (window.MyComponent) {
+          const MyComponent = window.MyComponent.default || window.MyComponent; // Handle default export
+
+          const root = ReactDOM.createRoot(
+            document.getElementById("my-component-root")
+          );
+          root.render(React.createElement(MyComponent)); // Render the React component
+          console.log("MyComponent rendered successfully.");
         } else {
           console.error("MyComponent is not defined.");
         }
