@@ -50,10 +50,10 @@
       "React or ReactDOM is not found in the global scope. Loading from CDN..."
     );
     loadScript(
-      "https://unpkg.com/react@18.3.1/umd/react.development.js",
+      "https://unpkg.com/react@18/umd/react.development.js",
       () => {
         loadScript(
-          "https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js",
+          "https://unpkg.com/react-dom@18/umd/react-dom.development.js",
           () => {
             loadScript(
               "http://localhost:5000/my-component.umd.js", // Replace with the correct path
