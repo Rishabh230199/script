@@ -1,7 +1,6 @@
 (function () {
   try {
     console.log("Starting the script...");
-
     // Step 1: Prevent injecting the component multiple times
     const rootDivId = "my-component-root";
     if (document.getElementById(rootDivId)) {
