@@ -43,11 +43,11 @@
       try {
         if (window.MyComponent) {
           console.log("MyComponent loaded successfully.");
-          const { default: MyComponent } = window.MyComponent; // Loaded from UMD build
+          const MyComponent = window.MyComponent; // Access the default export
 
           // Initialize React component
           const root = ReactDOM.createRoot(document.getElementById(rootDivId));
-          root.render(React.createElement(MyComponent));
+          root.render(React.createElement(MyComponent)); // Render MyComponent
           console.log("React component rendered.");
         } else {
           console.error("MyComponent is not defined.");
