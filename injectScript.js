@@ -65,7 +65,7 @@
           "https://unpkg.com/react-dom@18/umd/react-dom.development.js",
           () => {
             loadScript(
-              "http://localhost:5000/my-component.umd.js", // Replace with the correct path
+              "https://rishabh230199.github.io/frontend-script/library.umd.js", // Replace with the correct path
               initializeComponent
             );
           }
@@ -74,7 +74,7 @@
     } else {
       console.log("React and ReactDOM are already loaded.");
       loadScript(
-        "http://localhost:5000/my-component.umd.js", // Replace with the correct path
+        "https://rishabh230199.github.io/frontend-script/library.umd.js", // Replace with the correct path
         initializeComponent
       );
     }
