@@ -7,7 +7,6 @@
       console.log("Component is already injected.");
       return; // Stop if it's already injected
     }
-
     // Step 2: Create a container div to hold the component
     const rootDiv = document.createElement("div");
     rootDiv.id = rootDivId;
@@ -20,7 +19,6 @@
     rootDiv.style.padding = "10px";
     document.body.appendChild(rootDiv);
     console.log("Container div created and appended to body.");
-
     // Step 3: Load React and ReactDOM if they aren't already available
     function loadScript(src, callback) {
       try {
@@ -36,7 +34,6 @@
         console.error(`Error loading script from ${src}:`, error);
       }
     }
-
     // Step 4: Initialize the component once it's loaded
     function initializeComponent() {
       try {
